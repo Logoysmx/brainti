@@ -1,0 +1,555 @@
+body{
+	margin: 0;	
+	color: #5c5c5c;
+	background-color: #f5f5f5;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+}
+html,body{
+	height: 100%;
+}
+.brainti-logo{
+	font-family: timeburner, Verdana, Arial, sans-serif;
+	font-weight: normal;
+	display: inline-block;
+	margin: 0;
+	color: #333333;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+.brainti{
+	font-family: timeburner, Verdana, Arial, sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+@font-face {
+ font-family: timeburner;
+ src: url("../fuentes/timeburner_regular.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: timeburner;
+ src: url("../fuentes/timeburner_regular.ttf") /* TTF file for CSS3 browsers */
+}
+header{
+	display: block;
+	width: 100%;
+	background: #fff url('../img/brain.svg') no-repeat 10px center / 60px 60px;
+	padding: 25px 15px 25px 80px;
+	position: fixed;
+	z-index: 99;
+	box-shadow: 0 0 2px rgba(0,0,0,.3);
+}
+header nav ul, footer ul, .curso-detalles, .brainti-contacto{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	right: 0;
+}
+nav{
+	margin-left: 20px;
+}
+header nav ul li, nav{
+	display: inline-block;
+}
+header nav ul a:hover{
+	background-color: #00bcd3;
+	color: #fff;
+}
+header nav ul a{
+	transition: all .3s ease 0s;
+	padding: 8px 16px;
+	border-radius: 20px;
+}
+.btn-seleccionado{
+	background-color: #39d1b4;
+	color: #fff;
+}
+#brainti-home{
+	width: 100%;
+	background: #00bcd3 url('../img/b7.png');
+	padding: 120px 20px 20px 20px;
+}
+#brainti-index h2{
+	margin: 0;
+	font-weight: 300;
+	font-size: 50px;
+}
+.izq{
+	text-align: left;
+}
+.centrar{
+	text-align: center;
+}
+.brainti-btn{
+	padding: 15px 30px;
+	border-radius: 80px;
+	display: inline-block;
+	transition: all .2s ease 0s;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.brainti-btn:hover{
+	border-radius: 0;
+}
+.brainti-btn.bco{
+	background-color: #fff;
+	color: #00bcd3;
+}
+.brainti-tab{
+	display: table;
+	width: 100%;
+}
+.brainti-tab .b-ti, .brainti-tab .b-td{
+	display: table-cell;
+	width: 50%;
+}
+.b-ti.arriba, .b-td.arriba{
+	vertical-align: top;
+}
+.brainti-tab .b-ti{
+	padding-right: 20px;
+}
+.brainti-tab .b-td{
+	padding-left: 20px;
+}
+#brainti-cursos-index{
+	display: inline-block;
+	width: 400px;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	text-align: left;
+}
+#brainti-cursos-index ul{
+	list-style: none;
+	margin: 0;
+	height: 200px;
+	overflow-y: scroll;
+	padding: 0;
+	background-color: #fff;
+}
+#brainti-cursos-index a{
+	display: block;
+	padding: 15px 20px 15px 70px;
+}
+#bci-header{
+	background-color: #092f57;
+	padding: 20px;
+	color: #fff;
+}
+#bci-desc{
+	padding: 20px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	background-color: #fff;
+}
+#web{
+	background: url('../img/web_icono.png') no-repeat 14px center;
+}
+#fotografia{
+	background: url('../img/cam_icono.png') no-repeat 14px center;
+}
+#dg{
+	background: url('../img/dg_icono.png') no-repeat 14px center;
+}
+#brainti-pagos{
+	background: #f5f5f5;
+}
+#brainti-pagos img{
+	margin-top: 20px;
+}
+#brainti-pagos h3, #brainti-pagos p{
+	margin: 0;
+	text-align: center;
+}
+#brainti-pagos h3{	
+	font-weight: normal;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+#brainti-sec1, #brainti-sec2, #brainti-pagos, #sec-inscr{
+	padding: 20px;
+	font-weight: normal;
+}
+#brainti-sec1{
+	background-color: #fff;
+}
+#brainti-sec2{
+	background-color: #f5f5f5;
+}
+#brainti-sec1 h3, #brainti-sec2 h3{
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+}
+#brainti-sec2 h3{
+	font-size: 40px;
+	font-weight: 100;
+}
+.brainit-box-cols{
+	list-style: none;
+	padding: 0;
+	max-width: 980px;
+	display: inline-block;
+	margin: 0 auto;
+}
+.brainit-box-cols i{
+	font-size: 60px;
+}
+.brainit-box-cols li{
+	display: table-cell;
+}
+.brainit-box-cols li:not(:last-child){
+	padding-right: 25px;
+}
+footer{
+	display: block;
+	width: 100%;
+	font-size: .7em;	
+	padding: 20px;
+	background-color: #fff;
+}
+.brainti-footer-menu{
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+footer ul{
+	margin-right: 20px;
+	padding-right: 20px;	
+	float: left;
+	min-height: 120px;
+}
+footer ul li{
+	margin-bottom: 10px;
+}
+footer ul:not(:last-child){
+	border-right: 1px solid rgba(0,0,0,.1);
+}
+footer ul a:hover{
+	text-decoration: underline;
+}
+#brainti-fmenus{
+	overflow: hidden;
+	display: inline-block;
+}
+#brainti-creditos{
+	padding: 0 0 0 100px;
+	text-align: right;
+	/*border-top: 1px solid rgba(0,0,0,.1);*/
+	background: #fff url('../img/logo_thinksoft.png') no-repeat 5px center;
+}
+.slogan-sec{
+	margin-bottom: 20px!important;
+	font-size: 14px;
+}
+/**/
+.brainti-bgtxt{
+	padding: 8px 16px;
+	border-radius: 5px;
+	background-color: #43b149;
+	color: #fff;
+	display: inline-block;
+}
+.curso{
+	display: inline-block;
+	width: 300px;
+	background-color: #fff;
+	margin: 0 10px 10px 0;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	position: relative;
+	transition: all .4s ease 0s;
+}
+.curso:hover{
+	box-shadow: 0 2px 7px rgba(0,0,0,.3);
+}
+.brainti-lista-cursos{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.brainti-lista-cursos li{
+	display: inline-block;
+}
+.bg-curso{
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+	height: 150px;
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;	
+}
+.cont-curso{
+	padding: 10px;
+	text-align: left;
+}
+.cont-titulo{
+	display: block;
+	color: #16222d;
+	line-height: 1.2;
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+.cont-desc, .inicio-curso{
+	font-size: 14px;
+	display: block;
+	flex: 1 1 0;
+}
+.inicio-curso{
+	font-size: 12px;
+}
+.footer-curso{
+	overflow: hidden;
+}
+.costo-curso{
+	color: #43b149;
+	float: right;
+	padding: 10px;
+	font-weight: bold;
+}
+.info-curso{
+	background-color: #00bcd3;
+	color: #fff;
+	float: left;
+	padding: 12px;
+	font-size: 14px;
+	border-radius: 0 0 0 5px;
+}
+.btn-verde{
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #43b149;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 5px;
+}
+.sub-cont{
+	padding: 20px;
+	width: 100%;
+}
+.brainti-desc-curso{
+	padding-top: 100px;
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	color: #333;
+}
+.curso-sec-desc h2{
+	font-weight: 100;
+	margin: 0;
+	font-size: 35px;
+}
+.bg-curso-sec{
+	background: url('../img/frontend.jpg') no-repeat center center / 100%;
+	margin-top: 10px;
+	height: 350px;
+	width: 550px;
+}
+.desc-sec{
+	margin: 5px 0;
+}
+.brainti-tab{
+	display: table;
+	width: 100%;
+}
+.col-a,col-b{
+	display: table-cell;
+	width: 50%;
+}
+.col-a.arriba, .col-b.arriba{
+	vertical-align: top;
+}
+.brainti-desc-curso .col-b{
+	padding-left: 20px;
+}
+.costo{
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #00bcd3;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 40px 10px 10px;
+	position: relative;
+	display: inline-block;
+}
+.circulo{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	right: 9px;
+	top: 26px;
+	display: inline-block;
+	background-color: #fff;
+}
+.curso-detalles{
+	display: block!important;
+	margin-top: 20px;
+	font-size: 13px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	padding-top: 20px;
+}
+.curso-detalles .l-der{
+	width: 130px;
+	display: inline-block;
+}
+.curso-detalles li{
+	margin-bottom: 10px;
+	display: flex;
+}
+.curso-detalles .l-izq{
+	font-weight: bold;
+	display: inline-block;
+}
+#contenido-curso{
+	background-color: #f5f5f5;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+#contenido-curso .sub-cont{
+	width: 800px;
+}
+#index-curso .sub-cont{
+	width: 1024px;
+	margin: 0 auto;
+}
+#index-curso{
+	background-color: #fff;
+}
+#contenido-curso{
+	padding-top: 0!important;
+}
+.temario h3, .brainit-box-cols h4{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.temario ol li{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.temario ol li span{
+	display: block;
+}
+.temario ol li span, .link-instructor, .txt-azul{
+	color: #4985b8;
+}
+.instructor{
+	margin: 15px 0;
+	background-color: rgba(0,0,0,.1);
+	overflow: hidden;
+	padding: 20px;
+	display: none;
+}
+.foto{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin-right: 20px;
+	float: left;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+.desc-instructor{
+	padding-left: 15px;
+}
+#sec-cursos{
+	background: #f5f5f5;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+#sec-cursos h2{
+	margin-bottom: 15px;
+}
+#sec-registro, #sec-inscr, #sec-login{
+	padding: 120px 20px 20px 20px;
+	background-color: #160625;
+	color: #fff;	
+	min-height: 500px;
+}
+#sec-login{
+	background-image: url('../img/b7.png');
+	background-attachment: fixed;
+}
+#sec-registro h3{	
+	font-weight: normal;
+	font-size: 23px;
+}
+#sec-registro h3, #sec-registro p{
+	text-align: left!important;
+}
+#sec-registro p{
+	color: #a397ad;
+}
+#sec-registro p a:hover, .link1:hover, #brainit-login a:hover{
+	text-decoration: underline;
+	color: #00bcd3;
+}
+.i-reg, .i-contacto{
+	display: block;
+	width: 100%;
+	padding: 15px 20px;
+	border: none;
+	margin-top: 10px;
+	border-radius: 5px;
+	transition: all .4s ease 0s;
+}
+.i-reg:hover, .i-reg:focus, .i-contacto:hover, .i-contacto:focus{
+	box-shadow: 0 0 15px #00bcd3;
+}
+.brainti-btn1{
+	padding: 12px 20px;
+	display: inline-block;
+	border: none;
+	background-color: #00bcd3;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.brainti-btn2{
+	padding: 12px 20px;
+	display: inline-block;
+	border: none;
+	background-color: #160625;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.brainti-btn1:hover, .brainti-btn2:hover{
+	cursor: pointer;
+}
+#sec-inscr{
+	background-color: #151b20;
+	color: #fff;
+}
+#sec-inscr h2, #sec-inscr .curso-sec-desc p{
+	text-align: left;
+	color: #d9d7d5;
+}
+#sec-inscr .curso-sec-desc p{
+	border-bottom: 1px solid #d9d7d5;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.brainti-contacto li{
+	margin-top: 20px;
+}
+.brainti-contacto li i{
+	margin-right: 15px;
+}
+.mail-brainti:after{
+	content: "hola@brainti.com";
+}
+#brainit-login{
+	width: 550px;
+	border-radius: 5px;
+	background-color: #160625;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
