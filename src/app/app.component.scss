@@ -1,7 +1,9 @@
 .brainti {
 	&__container {
 		display: grid;
-		grid-template-rows: auto;
+		grid-template-rows: 2rem 2rem auto;
 		grid-template-columns: 2rem 3rem auto 3rem 2rem;
+		width: 100vw;
+		height: 100vh;		
 	}
 }
