@@ -6,4 +6,11 @@
 		width: 100vw;
 		height: 100vh;		
 	}
+	&__maite {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 4;
+		grid-row-end: 4;
+		background-color: red;		
+	}
 }
