@@ -1,17 +1,24 @@
 :host {
-	display: block;
-	background-color: #fbfcff;
+	display: grid;
+	grid-template-columns: 2rem auto 2rem;
+	grid-template-rows: 2rem auto;	
+	background: #fff;
 	grid-column-start: 2;
 	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 4;
-	height: 100vh;
+	height: calc(100vh - 2rem);
 	border-radius: .5rem .5rem 0 0;
-	-webkit-box-shadow: 0px 0px 41px 2px rgba(135,135,135,1);
-	-moz-box-shadow: 0px 0px 41px 2px rgba(135,135,135,1);
-	box-shadow: 0px 0px 41px 2px rgba(135,135,135,1);
+	box-shadow: 0 3px 8px 0 rgba(12, 0, 51, 0.1);
 	#brainti {
 		height: 50px;
 		width: auto;
 	}
+	.main-content {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
 }
+/*5694CE     588ECC  7BDEF1*/
