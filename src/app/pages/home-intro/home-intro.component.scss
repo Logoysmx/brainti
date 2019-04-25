@@ -19,6 +19,24 @@
 		grid-column-end: 3;
 		grid-row-start: 2;
 		grid-row-end: 2;
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: repeat(4, 25%);			
+		.left-block {
+			grid-column-start: 1;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 5;
+			background-color: #007bff;	
+		}
+		.block {
+		    grid-column-start: 3;
+		    grid-column-end: 5;
+		    grid-row-start: 2;
+		    grid-row-end: 4;
+			background-color: #007bff;				
+			box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
+		}
 	}
 }
 /*5694CE     588ECC  7BDEF1*/
