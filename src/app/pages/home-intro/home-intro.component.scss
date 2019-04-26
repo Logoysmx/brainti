@@ -1,7 +1,4 @@
 :host {
-	display: grid;
-	grid-template-columns: 2rem auto 2rem;
-	grid-template-rows: 2rem auto;	
 	background: #fff;
 	grid-column-start: 2;
 	grid-column-end: 5;
@@ -10,33 +7,43 @@
 	height: calc(100vh - 2rem);
 	border-radius: .5rem .5rem 0 0;
 	box-shadow: 0 3px 8px 0 rgba(12, 0, 51, 0.1);
+
+		display: grid;
+		grid-template-columns: repeat(5, 20%);
+		grid-template-rows: 3rem 1fr 1fr 1fr 1fr 3rem;		
 	#brainti {
 		height: 50px;
 		width: auto;
 	}
 	.main-content {
-		grid-column-start: 2;
-		grid-column-end: 3;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		display: grid;
-		grid-template-columns: repeat(4, 25%);
-		grid-template-rows: repeat(4, 25%);			
-		.left-block {
-			grid-column-start: 1;
-			grid-column-end: 4;
-			grid-row-start: 1;
-			grid-row-end: 5;
-			background-color: #007bff;	
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 7;
+		background-color: #007bff;
+		border-top-left-radius: .5rem;
+		padding: 6rem 6rem 2rem 6rem;
+		color: #fff;
+		h1 {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			font-weight: 900;
+			margin: 0;			
 		}
-		.block {
-		    grid-column-start: 3;
-		    grid-column-end: 5;
-		    grid-row-start: 2;
-		    grid-row-end: 4;
-			background-color: #007bff;				
-			box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
+		h1, p {
+			width: 500px;
+		}
+		p {
+			color: rgba(255, 255, 255, 0.5);
 		}
 	}
+	.foo {
+	    grid-column-start: 3;
+	    grid-column-end: 5;
+	    grid-row-start: 3;
+	    grid-row-end: 5;
+	    background: url('../../../assets/developer.jpg') no-repeat center center;
+	    background-size: 100% auto;
+		box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);	
+	}
 }
-/*5694CE     588ECC  7BDEF1*/
